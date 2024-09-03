@@ -1,0 +1,12 @@
+[submodule "Assignments/Homework1/homework-1-cgurram1"]
+	path = Assignments/Homework1/homework-1-cgurram1
+	url = https://github.com/asu-cse578-f2023/homework-1-cgurram1
+[submodule "Assignments/Homework2/homework-2-cgurram1"]
+	path = Assignments/Homework2/homework-2-cgurram1
+	url = https://github.com/asu-cse578-f2023/homework-2-cgurram1
+[submodule "Assignments/Homework3/homework-3-cgurram1"]
+	path = Assignments/Homework3/homework-3-cgurram1
+	url = https://github.com/asu-cse578-f2023/homework-3-cgurram1
+[submodule "Assignments/Homework4/homework-4-cgurram1"]
+	path = Assignments/Homework4/homework-4-cgurram1
+	url = https://github.com/asu-cse578-f2023/homework-4-cgurram1

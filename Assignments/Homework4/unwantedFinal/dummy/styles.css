@@ -1,0 +1,23 @@
+/* styles2.css */
+
+/* Center the map-center-container on the screen */
+#map-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the container take up the full viewport height */
+}
+
+/* Style the map-container with padding */
+#map-container {
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.country {
+    fill: #ccc;
+    stroke: #fff;
+}
+
+.hovered {
+    fill: #f00;
+}
