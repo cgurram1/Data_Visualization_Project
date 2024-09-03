@@ -5,13 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAST Challenge 2022 - Challenge 3 Economic</title>
-    <script src="Data_Visualization_Project/code/js/task1.js"></script>
-    <script src="Data_Visualization_Project/code/js/task2.js"></script>
-    <script src="Data_Visualization_Project/code/js/task3.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+    <!-- <script src="https://d3js.org/d3-array.v2.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        
+    <div class="three_controller">
+        <div class="Main_button BusinessProsperity_button">Business Prosperity</div>
+        <div class="Main_button ResidentFinances_button">Resident Finances</div>
+        <div class="Main_button EmploymentHealth_button">Employment Health</div>
     </div>
+    <div class="task3_main">
+        <div class="task3_top">
+            <div class="image_container_task3">
+    
+            </div>
+            <div class="lineChartDiv_task3">
+    
+            </div>
+        </div>
+        <div class="task3_bottom">
+            <div class="image_container_task3_participants">
+    
+            </div>
+            <div class="my_dataviz">
+                
+            </div>
+        </div>
+    </div>
+    <div class="task2_main">
+        <div class="task2_top">
+            <div class="dummy">
+                <div class="image_container_task2">
+        
+                </div>
+                <div class="backButton">
+                    <button type="button" class="btn btn-danger">Back</button>
+                </div>
+            </div>
+            <div class="parent_GroupedScatterPlot_task2">
+                <div class="grouped_scatter_plot_condition" style="display: block; visibility: hidden;">
+                    <div class="GroupedScatterPlot_task2">
+                        <div class="month_1_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_2_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_3_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_4_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_5_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_6_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_7_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_8_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_9_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_10_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_11_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_12_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_13_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_14_groupedScatter GroupedScatterPlotDiv"></div>
+                        <div class="month_15_groupedScatter GroupedScatterPlotDiv"></div>
+                    </div>
+                </div>
+                <div class="singleScatterPlot_Parent" style="display: none;">
+                    <div class="singleScatterPlot">
+                        <div class="dummy1"></div>
+                        <div class="singleScatterPlotMiddleDiv"></div>
+                        <div class="dummy2"></div>
+                    </div>
+                    <div class="InnovativeParentDiv">
+                        <div class="barchart_incomespending">
+                        </div>
+                        <div class="innovativeVis">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="task1_main">
+        <div class="task1_left">
+            <div class="image_container_task1">
+            </div>
+            <div class="checkBoxes">
+                <label class="checkbox-label">
+                    <input type="checkbox" class="pubsCheckbox">
+                    <span class="checkbox-indicator"></span> Pubs
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" class="schoolsCheckbox">
+                    <span class="checkbox-indicator"></span> Schools
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" class="restaurantsCheckbox">
+                    <span class="checkbox-indicator"></span> Restaurants
+                </label>
+            </div>
+        </div>
+        <div class="task1_right">
+            <div class="lineChartDiv_task1">
+            </div>
+            <div class="barChartDiv_task1">
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
