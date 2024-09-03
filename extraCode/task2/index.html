@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Final Project</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+
+        <script src="que2.js"></script>
+        <style>
+            .tooltip {
+                position: absolute;
+                display: none;
+                padding: 10px;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                z-index: 1;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="myContainer">
+            <h1 class="text-center">Final Project</h1>
+            <h3 class="text-center">Prikanksha Maheshwari - pmahes17@asu.edu</h3>
+            <hr>
+        </div>
+        <div id="chart-container">
+            <div id="scatter-plot">
+                <div id="displayDate"></div>
+            </div>
+            <div id="detail-plot">
+
+            </div>
+            <div id="zoomed-section">
+
+            </div>
+            <div id="barChart"></div>
+            <div id="donutChart"></div>
+
+            <button id="playBtn">Play</button>
+            <div id="data-range-selector">
+                <select id="timeframe-dropdown">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+            <div id="category-selector">
+              <form>
+                <label>
+                    <input type="radio" name="category" value="total" checked> Total
+                </label>
+                <label>
+                    <input type="radio" name="category" value="education"> Education
+                </label>
+                <label>
+                    <input type="radio" name="category" value="food"> Food
+                </label>
+                <label>
+                    <input type="radio" name="category" value="recreation"> Recreation
+                </label>
+                <label>
+                    <input type="radio" name="category" value="shelter"> Shelter
+                </label>
+              </form>
+            </div>
+          </div>
+          <div id="scatter-tooltip" class="tooltip"></div>
+
+    </body>
+</html>
+
+
+

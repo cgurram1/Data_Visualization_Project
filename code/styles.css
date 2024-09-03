@@ -1,0 +1,247 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.three_controller{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform: translate(0, 1500%);
+    cursor: pointer;  
+}
+.Main_button{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    border: 2px solid black;
+}
+.highlighted {
+    color: lightgray;
+    box-shadow: 0 0 30px rgba(94, 68, 161, 0.5);
+    cursor: pointer;
+}
+.image_container_task3,.image_container_task2,.image_container_task3_participants{
+    display: flex;
+    flex-direction: column; /* or row, depending on how you want items to be arranged */
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    /* position: absolute; */
+}
+.image_container_task1 {
+    display: flex;
+    flex-direction: column; /* or row, depending on how you want items to be arranged */
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10px;
+    margin-right: 10px; */
+    border-bottom: 1px solid black;
+}
+.lineChartDiv_task3,.lineChartDiv_task2{
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+.task3_top,.task2_top{
+    display: flex;
+}
+.task3_bottom,.task2_bottom{
+    display: flex;
+}
+.task1_left{
+    
+    width: 500px;
+    height: 730px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.task1_right{
+    width: 903px;
+    height: 730px;
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.basemap{
+    transform: translate(-50%, -50%);
+}
+.task3_main{
+    position: absolute;
+    visibility: hidden;
+}
+.task2_main{
+    position: absolute;
+    visibility: hidden;
+}
+.task1_main{
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+}
+.lineChartDiv_task1{
+    width: 902px;
+    height: 450px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+.barChartDiv_task1{
+    width: 902px;
+    height: 270px;
+    border: 2px solid black;
+}
+.checkBoxes {
+    width: 500px;
+    height: 230px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.checkbox-label {
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.GroupedScatterPlot_task2 {
+    height: 730px;
+    width: 900px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px; /* Adjust the gap between divs as needed */
+  }
+
+  .GroupedScatterPlotDiv {
+    border: 1px solid gray;
+    /* padding: 10px; */
+    text-align: center;
+  }
+.btn-danger {
+    margin-left: 0px;
+    margin-top: 100px;
+    width: 98%;
+    display: none;
+}
+
+.btn-danger:hover {
+    background-color: rgba(94, 68, 161, 0.8); /* Adjust the alpha value as needed */
+    color: white;
+}
+.singleScatterPlot_Parent {
+    height: 730px;
+    width: 900px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.singleScatterPlot{
+    display: flex;
+    height: 370px;
+    width: 900px;
+    border: 1px solid black;
+}
+.InnovativeParentDiv{
+    display: flex;
+    height: 358px;
+    width: 900px;
+    border: 1px solid black;
+}
+.barchart_incomespending{
+    height: 100%;
+    width: 40%;
+    border-right: 1px solid black;
+}
+.innovativeVis{
+    height: 100%;
+    width: 60%;
+}
+.my_dataviz{
+    width: 1025px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+.dummy1{
+    height: 100%;
+    width: 20%;
+}
+.dummy2{
+    height: 100%;
+    width: 20%;
+}
+.singleScatterPlotMiddleDiv{
+    height: 100%;
+    width: 60%;
+    border: 1px solid black;
+}
+.bar-label {
+    fill: black;
+}
+.image_container_task3_participants{
+    height: 350px;
+    width: 380px;
+}
+.lineChartDiv_task3{
+    height: 350px;
+    width: 1025px;
+}
+.node rect {
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+  }
+  
+  .node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+  }
+  
+  .link:hover {
+    stroke-opacity: .5;
+  }
+
+.checkBoxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+
+.checkbox-label input {
+    margin-right: 10px;
+}
+
+.checkbox-indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.pubsCheckbox + .checkbox-indicator {
+    background-color: red;
+}
+
+.schoolsCheckbox + .checkbox-indicator {
+    background-color: blue;
+}
+
+.restaurantsCheckbox + .checkbox-indicator {
+    background-color: green;
+}
