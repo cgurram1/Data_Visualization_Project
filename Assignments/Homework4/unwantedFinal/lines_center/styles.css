@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+#visualization {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-container{
+    position: absolute;
+    width: 350px;
+    height: 230px;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+.hovered {
+    fill: #f5c0c0;
+}

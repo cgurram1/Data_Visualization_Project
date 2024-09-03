@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        /* Add any additional styling here */
+    </style>
+</head>
+<body>
+
+<script>
+    // Set up the SVG container
+    var svgWidth = 400;
+    var svgHeight = 200;
+
+    var svg = d3.select('body').append('svg')
+        .attr('width', svgWidth)
+        .attr('height', svgHeight);
+
+    // Set up the scale for the axis
+    var xScale = d3.scaleLinear()
+        .domain([0, 10]) // Adjust the domain as needed
+        .range([0, svgWidth]);
+
+    // Create the x-axis
+    var xAxis = d3.axisBottom(xScale);
+
+    svg.append('g')
+        .attr('transform', 'translate(10, 100)') // Adjust the y-position as needed
+        .call(xAxis);
+
+    // Add a straight line
+    var lineData = [{ x1: 50, y1: 50, x2: 350, y2: 50 }]; // Adjust the coordinates as needed
+
+    svg.selectAll('line')
+        .data(lineData)
+        .enter().append('line')
+        .attr('x1', function(d) { return d.x1; })
+        .attr('y1', function(d) { return d.y1; })
+        .attr('x2', function(d) { return d.x2; })
+        .attr('y2', function(d) { return d.y2; })
+        .attr('stroke', 'black'); // Adjust the color as needed
+</script>
+
+</body>
+</html>
